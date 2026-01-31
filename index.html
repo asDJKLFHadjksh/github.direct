@@ -1,17 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=https://github.com/kuhyakuya" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Redirecting…</title>
-    <link rel="icon" href="https://github.com/favicon.ico" />
-    <link rel="canonical" href="https://github.com/kuhyakuya" />
+    <title>Kuhyakuya Github</title>
+    <link rel="icon" href="assets/icons/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="canonical" href="" id="canonical-link" />
   </head>
   <body>
-    <p>Redirecting to <a href="https://github.com/kuhyakuya">https://github.com/kuhyakuya</a>…</p>
-    <script>
-      window.location.replace("https://github.com/kuhyakuya");
-    </script>
+    <main class="page">
+      <section class="card" role="status" aria-live="polite">
+        <div class="card__lottie" id="loading-animation" aria-hidden="true"></div>
+        <h1>Terima Kasih telah ingin menggunjungi link kami</h1>
+        <p>
+          Kamu akan diarahkan ke <span id="target-url-text"></span>.
+        </p>
+        <div class="button-group">
+          <a class="button" href="" rel="noopener noreferrer" id="target-url">
+            Ya, lanjutkan
+          </a>
+          <a class="button button--ghost" href="https://kuhyakuya.com" rel="noopener noreferrer">
+            Tidak, batalkan
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
+    <script src="config/redirect.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
